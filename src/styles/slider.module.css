@@ -1,0 +1,46 @@
+.sliderContainer {
+  display:flex;
+  width: 100%;
+  position: relative;
+}
+
+.slider{
+  margin: 3% 0;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  overflow-x:scroll;
+}
+
+.sliderItem{
+  cursor: pointer;
+  width:20%;
+  display: flex;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+  margin: 0 5%;
+}
+.leftBorder{
+  cursor: pointer;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left:0;
+  height:100%;
+  width:2.5%;
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 10%, rgba(255,255,255,0) 100%);
+}
+.rightBorder{
+  cursor: pointer;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right:0;
+  height:100%;
+  width:2.5%;
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 90%);
+}

@@ -1,0 +1,50 @@
+.App {
+  text-align: center;
+  /*overflow-y: hidden;*/
+
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slideshow{
+  scroll-behavior: smooth;
+  width:100%;
+  height:100vh;
+  overflow: hidden;
+}
+
+.sectionBar{
+  background:#000;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  width:100%;
+  height:10vh;
+  color:#fff;
+}
+
+.fullHeightSection{
+  width:100%;
+  min-height:90vh;
+}
+
+.teamSection{
+  background: #ff0000;
+  width:100%;
+}
+
+footer{
+  overflow-y:hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
