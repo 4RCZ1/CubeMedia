@@ -12,27 +12,27 @@ function App() {
       <main id='top'>
         <Slideshow/>
         <div id={'projekty'} className={css.sectionBar}>
-          <h2>Marcin to ciołek</h2>
+          <p>Marcin to ciołek</p>
         </div>
         <div className={css.fullHeightSection}>
           <Slider/>
         </div>
         <div id={'oferta'} className={css.sectionBar}>
-          <h2>Oferta</h2>
+          <p>Oferta</p>
         </div>
         <div className={css.fullHeightSection}>
 
         </div>
         <div id={'zespol'} className={css.sectionBar}>
-          <h2>Zespół</h2>
+          <p>Zespół</p>
         </div>
         <div className={css.teamSection}>
 
         </div>
         <div id={'kontakt'} className={css.sectionBar}>
-          <h2>Kontakt</h2>
+          <p>Kontakt</p>
         </div>
-        <div className={css.fullHeightSection}>
+        <div className={css.contactSection}>
           <Contact/>
         </div>
       </main>

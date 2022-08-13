@@ -1,0 +1,28 @@
+.contacts{
+    text-align: center;
+    font: normal normal normal 30px/40px Segoe UI;
+    letter-spacing: 0.15px;
+    color: #000000;
+    opacity: 1;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    float:left;
+    align-self: center;
+    padding-top:50px;
+    padding-bottom:50px;
+    row-gap:10px;
+}
+.textContainer{
+    display: flex;
+    justify-content:flex-start;
+    height: 64px;  
+    padding-left:50px;
+    margin: 0em;
+}
+.textSpan {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 64px;
+    margin-left:20px;
+}
