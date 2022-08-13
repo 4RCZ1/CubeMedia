@@ -2,7 +2,7 @@ import css from './App.module.css';
 import Slideshow from "./components/Slideshow";
 import Header from "./components/Header";
 import Slider from "./components/Slider";
-
+import Contact from "./components/Contact";
 
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
       <main id='top'>
         <Slideshow/>
         <div id={'projekty'} className={css.sectionBar}>
-          <h2>Projekty</h2>
+          <h2>Marcin to ciołek</h2>
         </div>
         <div className={css.fullHeightSection}>
           <Slider/>
@@ -33,7 +33,7 @@ function App() {
           <h2>Kontakt</h2>
         </div>
         <div className={css.fullHeightSection}>
-
+          <Contact/>
         </div>
       </main>
       <footer>

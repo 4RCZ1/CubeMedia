@@ -13,4 +13,7 @@ code {
     monospace;
 }
 
-
+footer{
+  background: black;
+  color: white;
+}
