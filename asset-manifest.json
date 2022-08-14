@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/cubemedia/static/css/main.d50ccd74.css",
-    "main.js": "/cubemedia/static/js/main.78c14efe.js",
+    "main.css": "/cubemedia/static/css/main.e458c7f1.css",
+    "main.js": "/cubemedia/static/js/main.225bea86.js",
     "static/js/787.4d7101b0.chunk.js": "/cubemedia/static/js/787.4d7101b0.chunk.js",
     "static/media/Slide1.png": "/cubemedia/static/media/Slide1.9cda3004e2f64d369dec.png",
     "static/media/Slide3.png": "/cubemedia/static/media/Slide3.d9fc43dbb49aa7c9f53f.png",
@@ -12,12 +12,12 @@
     "static/media/CandC.png": "/cubemedia/static/media/CandC.87281e4b3c41f840d60a.png",
     "static/media/EQB.png": "/cubemedia/static/media/EQB.c863a60afaee296d4e15.png",
     "index.html": "/cubemedia/index.html",
-    "main.d50ccd74.css.map": "/cubemedia/static/css/main.d50ccd74.css.map",
-    "main.78c14efe.js.map": "/cubemedia/static/js/main.78c14efe.js.map",
+    "main.e458c7f1.css.map": "/cubemedia/static/css/main.e458c7f1.css.map",
+    "main.225bea86.js.map": "/cubemedia/static/js/main.225bea86.js.map",
     "787.4d7101b0.chunk.js.map": "/cubemedia/static/js/787.4d7101b0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d50ccd74.css",
-    "static/js/main.78c14efe.js"
+    "static/css/main.e458c7f1.css",
+    "static/js/main.225bea86.js"
   ]
 }
