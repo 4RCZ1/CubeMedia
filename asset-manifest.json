@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/cubemedia/static/css/main.e458c7f1.css",
-    "main.js": "/cubemedia/static/js/main.225bea86.js",
+    "main.css": "/cubemedia/static/css/main.026780d9.css",
+    "main.js": "/cubemedia/static/js/main.cc8dcbfd.js",
     "static/js/787.4d7101b0.chunk.js": "/cubemedia/static/js/787.4d7101b0.chunk.js",
     "static/media/Slide1.png": "/cubemedia/static/media/Slide1.9cda3004e2f64d369dec.png",
+    "static/media/Photo8.jpg": "/cubemedia/static/media/Photo8.fbced92114cebea411f8.jpg",
     "static/media/Slide3.png": "/cubemedia/static/media/Slide3.d9fc43dbb49aa7c9f53f.png",
     "static/media/Slide4.png": "/cubemedia/static/media/Slide4.91469cd1020782aa479b.png",
     "static/media/Slide2.png": "/cubemedia/static/media/Slide2.eab7e9f5e2dedd9c9a6c.png",
@@ -11,13 +12,24 @@
     "static/media/JUWENALIA.png": "/cubemedia/static/media/JUWENALIA.3847cdd4fc6b46efaa71.png",
     "static/media/CandC.png": "/cubemedia/static/media/CandC.87281e4b3c41f840d60a.png",
     "static/media/EQB.png": "/cubemedia/static/media/EQB.c863a60afaee296d4e15.png",
+    "static/media/Photo9.jpg": "/cubemedia/static/media/Photo9.8f2e76f970059741d062.jpg",
+    "static/media/Photo6.jpg": "/cubemedia/static/media/Photo6.3bbb32548b1b19dfe103.jpg",
+    "static/media/Photo7.jpg": "/cubemedia/static/media/Photo7.f73a821fef2654f8ae23.jpg",
+    "static/media/Photo10.jpg": "/cubemedia/static/media/Photo10.bf3a15bede57c103ea75.jpg",
+    "static/media/Photo5.jpg": "/cubemedia/static/media/Photo5.d2e90b9ea7fcd4bbd515.jpg",
+    "static/media/Photo1.jpg": "/cubemedia/static/media/Photo1.dcd3979e3a94d8e8fc1d.jpg",
+    "static/media/Photo2.jpg": "/cubemedia/static/media/Photo2.732c26fcf730e723f8ed.jpg",
+    "static/media/Photo11.jpg": "/cubemedia/static/media/Photo11.cb4b6ffd2bb965298c71.jpg",
+    "static/media/Photo12.jpg": "/cubemedia/static/media/Photo12.6f5f8acbebcba7f29899.jpg",
+    "static/media/Photo3.jpg": "/cubemedia/static/media/Photo3.1e5da93a88f207f74b4b.jpg",
+    "static/media/Photo4.jpg": "/cubemedia/static/media/Photo4.009460ef88497302e3f2.jpg",
     "index.html": "/cubemedia/index.html",
-    "main.e458c7f1.css.map": "/cubemedia/static/css/main.e458c7f1.css.map",
-    "main.225bea86.js.map": "/cubemedia/static/js/main.225bea86.js.map",
+    "main.026780d9.css.map": "/cubemedia/static/css/main.026780d9.css.map",
+    "main.cc8dcbfd.js.map": "/cubemedia/static/js/main.cc8dcbfd.js.map",
     "787.4d7101b0.chunk.js.map": "/cubemedia/static/js/787.4d7101b0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e458c7f1.css",
-    "static/js/main.225bea86.js"
+    "static/css/main.026780d9.css",
+    "static/js/main.cc8dcbfd.js"
   ]
 }
