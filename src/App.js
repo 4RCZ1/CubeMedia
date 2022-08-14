@@ -33,7 +33,7 @@ function App() {
           <p>Kontakt</p>
         </div>
         <div className={css.contactSection}>
-          <Contact/>
+        <Contact/>
         </div>
       </main>
       <footer>

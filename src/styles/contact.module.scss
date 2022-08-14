@@ -1,3 +1,6 @@
+
+$height: 1.5em;
+$width: $height;
 .contacts{
     text-align: center;
     font: normal normal normal 30px/40px Segoe UI;
@@ -9,30 +12,36 @@
     justify-content: flex-start;
     float:left;
     align-self: center;
-    padding-top:50px;
-    padding-bottom:50px;
-    row-gap:10px;
+    padding-top:2em;
+    padding-bottom:2em;
+    row-gap:1em;
+    font-size: 36px;
 }
 
 .textContainer {
     display: flex;
     justify-content:flex-start;
-    height: 64px;  
-    padding-left:50px;
+    height: $height;  
+    padding-left:0.5em;
     margin: 0em;
+    align-items: center
+}
+
+.svgWrapper {
+    height: $height;
+    width: $width;
+    padding:0;  
 }
 
 .textContainer a{
     display: flex;
-    justify-content:flex-start;
-    height: 64px;  
-    margin: 0em;
+    height: $height;  
     text-decoration: none;
     color: #000000;
 }
+
 .textSpan {
-    display: inline-block;
     vertical-align: middle;
-    line-height: 64px;
-    margin-left:20px;
+    line-height: $height;
+    margin-left: 1em;
 }

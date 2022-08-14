@@ -9,7 +9,7 @@
   width: 100%;
   overflow: hidden;
   display: flex;
-  overflow-x:scroll;
+  overflow-x:hidden;
 }
 
 .sliderItem{
