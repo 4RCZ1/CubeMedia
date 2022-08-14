@@ -1,0 +1,85 @@
+.team{
+    display: grid;
+
+    grid-template-columns: 1fr 2fr 1fr;
+
+    grid-template-rows: 1fr 1fr 1fr ;
+
+    grid-template-areas: 
+    "photo-1 main photo-4"
+    "photo-2 main photo-5"
+    "photo-3 main photo-6";
+}
+
+.photoText{
+    position: absolute;
+    color:#FFFFFF;
+    opacity: 0;
+    right:0;
+    top:25%;
+    width: 100%;
+    text-align: center;
+    transition-duration: 0.5s;
+}
+
+.main{
+    grid-area: main;
+
+    text-align: center;
+    letter-spacing: 0.3px;
+    color: #FFFFFF;
+    font-size: 5vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    filter: blur(0px) !important;
+}
+
+
+@mixin photoContainer()
+{
+    @for $i from 1 to 7 {   
+        .photoContainer#{$i}
+        {
+            position: relative;
+            grid-area: photo-#{$i};
+            margin-top: 35px;
+            
+        }
+        .photoContainer#{$i}:hover .photoText{
+            opacity: 1;
+        }
+    }
+}
+
+@mixin photo($count: 13) {
+    @for $i from 1 to $count {
+        .photo#{$i}{
+            background-image: url("http://localhost:3000/cubemedia/team/photo#{$i}.jpg");
+            background-size: cover;
+            width:100%;
+            height:100%;
+            min-height: 400px;
+            transition: opacity 0.5s ease-in-out;
+            position: relative;
+            z-index: 1;
+            box-shadow: 0px 0px 0px 5px black;
+            @if $i % 2 == 1 {
+                position: absolute;
+                filter: blur(4px);
+                top:0%;
+                z-index: 0;
+            }
+        }
+        .photo#{$i}:hover{
+            @if $i % 2 == 0 {
+                opacity: 0;
+            }
+        }
+    }
+}
+
+@include photo();
+@include photoContainer();
