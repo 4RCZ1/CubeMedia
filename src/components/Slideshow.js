@@ -46,7 +46,6 @@ function Slideshow() {
   }
 
   useEffect(() => {
-    const scrollOffset = document.getElementsByClassName('slideshow-container')[0].scrollWidth/Slides.length;
     const timer = setInterval(nextSlide, 5000);
     return () => clearInterval(timer);
   });

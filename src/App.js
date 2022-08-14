@@ -12,7 +12,7 @@ function App() {
       <main id='top'>
         <Slideshow/>
         <div id={'projekty'} className={css.sectionBar}>
-          <p>Marcin to ciołek</p>
+          <p>Projekty</p>
         </div>
         <div className={css.fullHeightSection}>
           <Slider/>
