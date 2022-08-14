@@ -8,8 +8,7 @@ import Fashnactv from "../images/slider/FASHNACTV.png";
 import Mercedeseqb2022 from "../images/slider/EQB.png";
 import Juwenalia from "../images/slider/JUWENALIA.png";
 import {Fragment, useEffect, useState} from "react";
-import Collapsible from "react-collapsible";
-import {Accordion, AccordionActions, AccordionDetails, AccordionSummary} from "@mui/material";
+import {Accordion, AccordionDetails, AccordionSummary} from "@mui/material";
 
 const Slider = () => {
   const components = [FASHNACTV, MERCEDESEQB2022, CARSANDCOFFEE2022, JUWENALIASZCZECIN2022];
