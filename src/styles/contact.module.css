@@ -13,12 +13,22 @@
     padding-bottom:50px;
     row-gap:10px;
 }
-.textContainer{
+
+.textContainer {
     display: flex;
     justify-content:flex-start;
     height: 64px;  
     padding-left:50px;
     margin: 0em;
+}
+
+.textContainer a{
+    display: flex;
+    justify-content:flex-start;
+    height: 64px;  
+    margin: 0em;
+    text-decoration: none;
+    color: #000000;
 }
 .textSpan {
     display: inline-block;
