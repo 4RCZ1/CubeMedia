@@ -3,7 +3,7 @@ import Slideshow from "./components/Slideshow";
 import Header from "./components/Header";
 import Slider from "./components/Slider";
 import Contact from "./components/Contact";
-
+import Team from "./components/Team";
 
 function App() {
   return (
@@ -27,7 +27,7 @@ function App() {
           <p>Zespół</p>
         </div>
         <div className={css.teamSection}>
-
+          <Team/>
         </div>
         <div id={'kontakt'} className={css.sectionBar}>
           <p>Kontakt</p>
