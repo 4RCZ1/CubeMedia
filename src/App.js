@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import Slider from "./components/Slider";
 import Contact from "./components/Contact";
 import Team from "./components/Team";
-
+import Offer from "./components/Offer";
 function App() {
   return (
     <div className={css.App}>
@@ -21,7 +21,7 @@ function App() {
           <p>Oferta</p>
         </div>
         <div className={css.fullHeightSection}>
-
+        <Offer/>
         </div>
         <div id={'zespol'} className={css.sectionBar}>
           <p>Zespół</p>

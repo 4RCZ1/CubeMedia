@@ -1,0 +1,63 @@
+.content {
+    font: normal normal normal 40px Segoe UI;
+    letter-spacing: 0.2px;
+    color: #000000;
+    text-align: left;
+    line-height: 60px;
+}
+.contentWrapper{
+    margin: 3em;
+}
+
+.imagesContainer{
+    display: grid;
+
+    grid-template-columns: 2fr 2fr 1fr 2fr 2fr;
+
+    grid-template-rows: 1fr 1fr 1fr ;
+
+    grid-template-areas: 
+    ". photo-1 . photo-2 ."
+    ". photo-1 . photo-2 ."
+    ". . . . .";
+
+    width:100%;
+    min-height:600px;
+}
+
+.imagesContainer > img {
+    position: absolute;
+    border: 0;
+    background-size: cover;
+    min-height: 400px;
+    min-width:400px;
+    width:100%;
+    margin-top:5em;
+}
+
+
+.imageWrapper1{
+    grid-area: photo-1;
+    position: relative;
+}
+
+.imageWrapper2{
+    grid-area: photo-2;
+    position: relative;
+}
+
+.imageText{
+    position: absolute;
+    font-size: 40px;
+    top:50%;
+    width:100%;
+    text-align: center;
+    font: normal normal normal 78px/117px Segoe UI;
+    letter-spacing: 0.39px;
+    color: #FFFFFF;
+    -webkit-text-stroke: 2px black;
+}
+
+.accordionWrapper{
+    padding:0 !important; 
+}
