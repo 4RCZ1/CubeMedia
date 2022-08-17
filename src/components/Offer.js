@@ -29,20 +29,22 @@ const Offer = () => {
         </p>
     </div>
     <div className={css.imagesContainer}>  
-        <div className={css.imageWrapper1}>
-            <img className={css.photo1} src={Video} onClick={() => SetProject(0)}></img>
+        <div className={css.imageWrapper1}><a href="#offerContent" onClick={() => SetProject(0)}>
+            <img className={css.photo1} src={Video}/>
             <p className={css.imageText}>VIDEO</p>
+            </a>
         </div>
-        <div className={css.imageWrapper2}>
-            <img className={css.photo2} src={Foto} onClick={() => SetProject(1)}></img>
+        <div className={css.imageWrapper2}><a href="#offerContent" onClick={() => SetProject(1)}>
+            <img className={css.photo2} src={Foto}/>
             <p className={css.imageText}>FOTO</p>
+            </a>
         </div>
     </div>
     <Accordion expanded={project!==null}>
 
-        <AccordionDetails className={css.accordionWrapper}>
+        <AccordionDetails id={'offerContent'} className={css.accordionWrapper}>
           <Component/>
-        </AccordionDetails>
+        </AccordionDetails >
     </Accordion>
   </div>
     )
