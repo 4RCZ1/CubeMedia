@@ -1,0 +1,24 @@
+
+@import "video.module.scss";
+.title{
+    @extend .title;
+}
+
+.foto{
+    height: 100%;
+    width:  100%;
+}
+
+.foto:nth-last-child(1)
+{
+    padding-bottom: 0%;
+}
+
+.fotoWrapper{
+    padding-bottom: 5%;
+}
+
+.fotoWrapper:nth-last-child(1){
+    background-color: #000000;
+    padding-bottom: 0%;
+}
