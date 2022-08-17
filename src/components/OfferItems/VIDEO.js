@@ -1,7 +1,7 @@
-import css from "../../styles/video.module.css";
+import css from "../../styles/video.module.scss";
 const VIDEO = () => {
     return (
-        <div>
+        <div className={css.container}>
             <div className={css.title}>
                 <p><b>CUBE MEDIA</b> OFERTA VIDEO</p>
             </div>

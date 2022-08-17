@@ -1,0 +1,43 @@
+
+$titlePadding: 5%;
+.mainText{
+    font: normal normal normal 40px Segoe UI;
+    letter-spacing: 0.2px;
+    color: #000000;
+    text-align: left;
+    line-height:  40px;
+    padding: 5%;
+}
+
+.smallText{
+    font: normal normal normal 20px Segoe UI;
+    letter-spacing: 0.1px;
+    color: #000000;
+}
+
+.title{
+    height: 2em;
+    width: calc(100% - $titlePadding);
+    font: normal normal normal 84px Segoe UI;
+    letter-spacing: 0px;
+    color: #000000;
+    box-shadow: 0 20px 12px -2px grey;
+    position: relative;
+    padding-left: $titlePadding;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center
+}
+
+.pricesText {
+    padding:2em
+}
+
+.pricesText p{
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+
+
+
+
