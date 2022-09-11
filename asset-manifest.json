@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/cubemedia/static/css/main.ff554a25.css",
-    "main.js": "/cubemedia/static/js/main.e040211a.js",
+    "main.css": "/cubemedia/static/css/main.605520ed.css",
+    "main.js": "/cubemedia/static/js/main.dd8681b7.js",
     "static/js/787.4d7101b0.chunk.js": "/cubemedia/static/js/787.4d7101b0.chunk.js",
+    "static/media/FotoContent1.jpg": "/cubemedia/static/media/FotoContent1.4ec304d64935b3d86987.jpg",
     "static/media/Slide1.png": "/cubemedia/static/media/Slide1.9cda3004e2f64d369dec.png",
     "static/media/Photo8.jpg": "/cubemedia/static/media/Photo8.fbced92114cebea411f8.jpg",
     "static/media/Slide3.png": "/cubemedia/static/media/Slide3.d9fc43dbb49aa7c9f53f.png",
@@ -12,6 +13,7 @@
     "static/media/JUWENALIA.png": "/cubemedia/static/media/JUWENALIA.3847cdd4fc6b46efaa71.png",
     "static/media/CandC.png": "/cubemedia/static/media/CandC.87281e4b3c41f840d60a.png",
     "static/media/EQB.png": "/cubemedia/static/media/EQB.c863a60afaee296d4e15.png",
+    "static/media/Video.png": "/cubemedia/static/media/Video.e301b320ac8f58a33ae6.png",
     "static/media/Photo9.jpg": "/cubemedia/static/media/Photo9.8f2e76f970059741d062.jpg",
     "static/media/Photo6.jpg": "/cubemedia/static/media/Photo6.3bbb32548b1b19dfe103.jpg",
     "static/media/Photo7.jpg": "/cubemedia/static/media/Photo7.f73a821fef2654f8ae23.jpg",
@@ -21,15 +23,16 @@
     "static/media/Photo2.jpg": "/cubemedia/static/media/Photo2.732c26fcf730e723f8ed.jpg",
     "static/media/Photo11.jpg": "/cubemedia/static/media/Photo11.cb4b6ffd2bb965298c71.jpg",
     "static/media/Photo12.jpg": "/cubemedia/static/media/Photo12.6f5f8acbebcba7f29899.jpg",
+    "static/media/Foto.png": "/cubemedia/static/media/Foto.e62704650b6771337f20.png",
     "static/media/Photo3.jpg": "/cubemedia/static/media/Photo3.1e5da93a88f207f74b4b.jpg",
     "static/media/Photo4.jpg": "/cubemedia/static/media/Photo4.009460ef88497302e3f2.jpg",
     "index.html": "/cubemedia/index.html",
-    "main.ff554a25.css.map": "/cubemedia/static/css/main.ff554a25.css.map",
-    "main.e040211a.js.map": "/cubemedia/static/js/main.e040211a.js.map",
+    "main.605520ed.css.map": "/cubemedia/static/css/main.605520ed.css.map",
+    "main.dd8681b7.js.map": "/cubemedia/static/js/main.dd8681b7.js.map",
     "787.4d7101b0.chunk.js.map": "/cubemedia/static/js/787.4d7101b0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ff554a25.css",
-    "static/js/main.e040211a.js"
+    "static/css/main.605520ed.css",
+    "static/js/main.dd8681b7.js"
   ]
 }
