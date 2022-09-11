@@ -15,35 +15,33 @@
 .sliderItem{
   cursor: pointer;
   width:20%;
+  min-width: 360px;
   display: flex;
   justify-content: center;
   transition: all 0.5s ease-in-out;
   margin: 0 5%;
 }
-.leftBorder{
+.sideBorder{
   cursor: pointer;
   display:flex;
   justify-content: center;
   align-items: center;
   position: absolute;
-  left:0;
+  background: rgb(255,255,255);
   height:100%;
   width:2.5%;
-  background: rgb(255,255,255);
+}
+.leftBorder{
+  left:0;
   background: linear-gradient(90deg, rgba(255,255,255,1) 10%, rgba(255,255,255,0) 100%);
 }
 .rightBorder{
-  cursor: pointer;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
   right:0;
-  height:100%;
-  width:2.5%;
-  background: rgb(255,255,255);
   background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 90%);
 }
 .rightBorder:hover .icon,.leftBorder:hover .icon{
   transform:scale(1.2);
+}
+.accordionWrapper{
+  padding:0 !important;
 }

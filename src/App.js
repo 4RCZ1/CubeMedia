@@ -5,6 +5,7 @@ import Slider from "./components/Slider";
 import Contact from "./components/Contact";
 import Team from "./components/Team";
 import Offer from "./components/Offer";
+
 function App() {
   return (
     <div className={css.App}>
@@ -14,14 +15,14 @@ function App() {
         <div id={'projekty'} className={css.sectionBar}>
           <p>Projekty</p>
         </div>
-        <div className={css.fullHeightSection}>
+        <div className={`${css.fullHeightSection} ${css.projectSectionWrapper}`}>
           <Slider/>
         </div>
         <div id={'oferta'} className={css.sectionBar}>
           <p>Oferta</p>
         </div>
         <div className={css.fullHeightSection}>
-        <Offer/>
+          <Offer/>
         </div>
         <div id={'zespol'} className={css.sectionBar}>
           <p>Zespół</p>
@@ -33,7 +34,7 @@ function App() {
           <p>Kontakt</p>
         </div>
         <div className={css.contactSection}>
-        <Contact/>
+          <Contact/>
         </div>
       </main>
       <footer>

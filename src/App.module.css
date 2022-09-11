@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  /*overflow-y: hidden;*/
+  overflow-y: hidden;
 
 }
 
@@ -42,6 +42,12 @@
 .fullHeightSection{
   width:100%;
   min-height:90vh;
+}
+
+.projectSectionWrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .contactSection{

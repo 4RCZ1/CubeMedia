@@ -15,14 +15,14 @@ const Slider = () => {
   const [project, setProject] = useState(null);
   const [scrollOffset, setScrollOffset] = useState(0);
   const SetProject = (index) => {
-    setProject(project===index ? null : index);
+    setProject(project === index ? null : index);
   }
 
-  const Component = project===null ? ()=>null : components[project];
+  const Component = project === null ? () => null : components[project];
   const images = [Fashnactv, Mercedeseqb2022, CandC, Juwenalia];
 
   useEffect(() => {
-    setScrollOffset(document.getElementsByClassName(css.slider)[0].scrollWidth/components.length);
+    setScrollOffset(document.getElementsByClassName(css.slider)[0].scrollWidth / components.length);
     console.log(scrollOffset);
   }, [components.length, scrollOffset]);
 
@@ -31,20 +31,20 @@ const Slider = () => {
     console.log(slider.scrollLeft);
     console.log(slider.scrollWidth);
     console.log(scrollOffset);
-    console.log('parent:',slider.parentElement.scrollWidth)
-    if(slider.scrollLeft+slider.parentElement.scrollWidth < slider.scrollWidth) {
+    console.log('parent:', slider.parentElement.scrollWidth)
+    if (slider.scrollLeft + slider.parentElement.scrollWidth < slider.scrollWidth) {
       slider.scrollBy({
         top: 0,
         left: scrollOffset,
         behavior: 'smooth'
       })
-    }else if(slider.scrollLeft+slider.parentElement.scrollWidth === slider.scrollWidth) {
+    } else if (slider.scrollLeft + slider.parentElement.scrollWidth === slider.scrollWidth) {
       slider.scrollTo({
         top: 0,
         left: 0,
         behavior: 'smooth'
       })
-    }else{
+    } else {
       slider.scrollTo({
         top: 0,
         left: slider.scrollWidth,
@@ -56,19 +56,19 @@ const Slider = () => {
   const goToPrevious = () => {
     const slider = document.getElementsByClassName(css.slider)[0];
     console.log(slider.scrollLeft);
-    if(slider.scrollLeft - scrollOffset > 0) {
+    if (slider.scrollLeft - scrollOffset > 0) {
       slider.scrollBy({
         top: 0,
         left: -scrollOffset,
         behavior: 'smooth'
       })
-    }else if(slider.scrollLeft === 0) {
+    } else if (slider.scrollLeft === 0) {
       slider.scrollTo({
         top: 0,
         left: slider.scrollWidth - scrollOffset,
         behavior: 'smooth'
       })
-    }else{
+    } else {
       slider.scrollTo({
         top: 0,
         left: 0,
@@ -77,30 +77,27 @@ const Slider = () => {
     }
   }
 
-
-
-
   return (
     <Fragment>
-    <div className={css.sliderContainer}>
-      <div className={css.leftBorder} onClick={goToPrevious}>
-        <div className={"arrow-left icon "+css.icon}></div>
+      <div className={css.sliderContainer}>
+        <div className={css.leftBorder} onClick={goToPrevious}>
+          <div className={"arrow-left icon " + css.icon}></div>
+        </div>
+        <div className={css.slider}>
+          {images.map((image, index) => {
+            return (
+              <div className={css.sliderItem} key={index}>
+                <img src={image} alt="slider item" onClick={() => SetProject(index)}/>
+              </div>
+            )
+          })}
+        </div>
+        <div className={css.rightBorder} onClick={goToNext}>
+          <div className={"arrow-right icon " + css.icon}></div>
+        </div>
       </div>
-      <div className={css.slider}>
-        {images.map((image, index) => {
-          return (<div className={css.sliderItem} key={index}>
-              <img src={image} alt="slider item" onClick={() => SetProject(index)}/>
-            </div>
-          )
-        })}
-      </div>
-      <div className={css.rightBorder} onClick={goToNext}>
-        <div className={"arrow-right icon "+css.icon}></div>
-      </div>
-    </div>
-      <Accordion expanded={project!==null}>
-        <AccordionSummary></AccordionSummary>
-        <AccordionDetails>
+      <Accordion expanded={project !== null}>
+        <AccordionDetails className={css.accordionWrapper}>
           <Component/>
         </AccordionDetails>
       </Accordion>
