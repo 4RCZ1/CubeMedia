@@ -1,19 +1,28 @@
 {
   "files": {
-    "main.css": "/cubemedia/static/css/main.605520ed.css",
-    "main.js": "/cubemedia/static/js/main.dd8681b7.js",
+    "main.css": "/cubemedia/static/css/main.412d64f1.css",
+    "main.js": "/cubemedia/static/js/main.19a2c096.js",
     "static/js/787.4d7101b0.chunk.js": "/cubemedia/static/js/787.4d7101b0.chunk.js",
     "static/media/FotoContent1.jpg": "/cubemedia/static/media/FotoContent1.4ec304d64935b3d86987.jpg",
+    "static/media/FotoContent2.png": "/cubemedia/static/media/FotoContent2.f2652314aa2be3f0dc9c.png",
     "static/media/Slide1.png": "/cubemedia/static/media/Slide1.9cda3004e2f64d369dec.png",
     "static/media/Photo8.jpg": "/cubemedia/static/media/Photo8.fbced92114cebea411f8.jpg",
+    "static/media/botLeft.jpg": "/cubemedia/static/media/botLeft.d6005b3b539bbd4a130d.jpg",
+    "static/media/midLeft.jpg": "/cubemedia/static/media/midLeft.a87d9190b5c56c8ec513.jpg",
     "static/media/Slide3.png": "/cubemedia/static/media/Slide3.d9fc43dbb49aa7c9f53f.png",
+    "static/media/FotoContent3.png": "/cubemedia/static/media/FotoContent3.4e310752d24ed0fa71d8.png",
     "static/media/Slide4.png": "/cubemedia/static/media/Slide4.91469cd1020782aa479b.png",
+    "static/media/botRight.jpg": "/cubemedia/static/media/botRight.a454046b4682077e3cff.jpg",
+    "static/media/top.png": "/cubemedia/static/media/top.b587172be2b3a4adf25c.png",
     "static/media/Slide2.png": "/cubemedia/static/media/Slide2.eab7e9f5e2dedd9c9a6c.png",
+    "static/media/midCenterRight.jpg": "/cubemedia/static/media/midCenterRight.7c2e67cc898f9bb7ce81.jpg",
+    "static/media/botCenter.jpg": "/cubemedia/static/media/botCenter.6f83f4e14f729836e046.jpg",
     "static/media/FASHNACTV.png": "/cubemedia/static/media/FASHNACTV.f0f68c475337c52009f1.png",
     "static/media/JUWENALIA.png": "/cubemedia/static/media/JUWENALIA.3847cdd4fc6b46efaa71.png",
     "static/media/CandC.png": "/cubemedia/static/media/CandC.87281e4b3c41f840d60a.png",
     "static/media/EQB.png": "/cubemedia/static/media/EQB.c863a60afaee296d4e15.png",
     "static/media/Video.png": "/cubemedia/static/media/Video.e301b320ac8f58a33ae6.png",
+    "static/media/juwenaliaPlakat.jpg": "/cubemedia/static/media/juwenaliaPlakat.dd32edfc89aca0892253.jpg",
     "static/media/Photo9.jpg": "/cubemedia/static/media/Photo9.8f2e76f970059741d062.jpg",
     "static/media/Photo6.jpg": "/cubemedia/static/media/Photo6.3bbb32548b1b19dfe103.jpg",
     "static/media/Photo7.jpg": "/cubemedia/static/media/Photo7.f73a821fef2654f8ae23.jpg",
@@ -24,15 +33,16 @@
     "static/media/Photo11.jpg": "/cubemedia/static/media/Photo11.cb4b6ffd2bb965298c71.jpg",
     "static/media/Photo12.jpg": "/cubemedia/static/media/Photo12.6f5f8acbebcba7f29899.jpg",
     "static/media/Foto.png": "/cubemedia/static/media/Foto.e62704650b6771337f20.png",
-    "static/media/Photo3.jpg": "/cubemedia/static/media/Photo3.1e5da93a88f207f74b4b.jpg",
-    "static/media/Photo4.jpg": "/cubemedia/static/media/Photo4.009460ef88497302e3f2.jpg",
+    "static/media/Photo3.jpg": "/cubemedia/static/media/Photo3.1cc947ed580d88d82f73.jpg",
+    "static/media/Photo4.jpg": "/cubemedia/static/media/Photo4.90fb0224779105902a30.jpg",
+    "static/media/CubeMediaLogo.png": "/cubemedia/static/media/CubeMediaLogo.35b8a8ed8e6634e7581f.png",
     "index.html": "/cubemedia/index.html",
-    "main.605520ed.css.map": "/cubemedia/static/css/main.605520ed.css.map",
-    "main.dd8681b7.js.map": "/cubemedia/static/js/main.dd8681b7.js.map",
+    "main.412d64f1.css.map": "/cubemedia/static/css/main.412d64f1.css.map",
+    "main.19a2c096.js.map": "/cubemedia/static/js/main.19a2c096.js.map",
     "787.4d7101b0.chunk.js.map": "/cubemedia/static/js/787.4d7101b0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.605520ed.css",
-    "static/js/main.dd8681b7.js"
+    "static/css/main.412d64f1.css",
+    "static/js/main.19a2c096.js"
   ]
 }
