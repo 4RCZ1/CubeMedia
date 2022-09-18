@@ -1,5 +1,5 @@
 .content {
-    font: normal normal normal 40px Segoe UI;
+    font: normal normal normal 3rem Segoe UI;
     letter-spacing: 0.2px;
     color: #000000;
     text-align: left;
@@ -10,17 +10,9 @@
 }
 
 .imagesContainer{
-    display: grid;
-
-    grid-template-columns: 2fr 2fr 1fr 2fr 2fr;
-
-    grid-template-rows: 1fr 1fr 1fr ;
-
-    grid-template-areas: 
-    ". photo-1 . photo-2 ."
-    ". photo-1 . photo-2 ."
-    ". . . . .";
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     width:100%;
     min-height:600px;
 }
@@ -36,20 +28,14 @@
 }
 
 
-.imageWrapper1{
-    grid-area: photo-1;
-    position: relative;
-}
-
-.imageWrapper2{
-    grid-area: photo-2;
+.imageWrapper{
+    margin: 0 10em;
     position: relative;
 }
 
 .imageText{
     position: absolute;
-    font-size: 40px;
-    top:50%;
+    top:18%;
     width:100%;
     text-align: center;
     font: normal normal normal 78px/117px Segoe UI;

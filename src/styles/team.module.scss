@@ -1,85 +1,107 @@
-.team{
-    display: grid;
+.team {
+  display: grid;
 
-    grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
 
-    grid-template-rows: 1fr 1fr 1fr ;
+  grid-template-rows: 1fr 1fr 1fr;
 
-    grid-template-areas: 
+  grid-template-areas:
     "photo-1 main photo-4"
     "photo-2 main photo-5"
     "photo-3 main photo-6";
+  @media (max-width: 1366px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+            "main main"
+      "photo-1 photo-4"
+      "photo-2 photo-5"
+      "photo-3 photo-6";
+  }
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+            "main"
+      "photo-1"
+      "photo-4"
+      "photo-2"
+      "photo-5"
+      "photo-3"
+      "photo-6";
+  }
 }
 
-.photoText{
-    position: absolute;
-    color:#FFFFFF;
-    opacity: 0;
-    right:0;
-    top:25%;
-    width: 90%;
-    text-align: center;
-    padding:5%;
-    transition-duration: 0.5s;
+.photoText {
+  position: absolute;
+  color: #FFFFFF;
+  opacity: 0;
+  right: 0;
+  top: 25%;
+  max-width: 90%;
+  text-align: center;
+  padding: 5%;
+  transition-duration: 0.5s;
+  @media (max-width: 768px) {
+    font-size:1.6rem;
+  }
 }
 
-.main{
-    grid-area: main;
+.main {
+  grid-area: main;
 
-    text-align: center;
-    letter-spacing: 0.3px;
-    color: #FFFFFF;
-    font-size: 5vh;
+  text-align: center;
+  letter-spacing: 0.3px;
+  color: #FFFFFF;
+  font-size: 3rem;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    filter: blur(0px) !important;
+  filter: blur(0px) !important;
 }
 
 
-@mixin photoContainer()
-{
-    @for $i from 1 to 7 {   
-        .photoContainer#{$i}
-        {
-            position: relative;
-            grid-area: photo-#{$i};
-            margin-top: 35px;
-            
-        }
-        .photoContainer#{$i}:hover .photoText{
-            opacity: 1;
-        }
+@mixin photoContainer() {
+  @for $i from 1 to 7 {
+    .photoContainer#{$i} {
+      position: relative;
+      grid-area: photo-#{$i};
+      margin-top: 35px;
+
     }
+    .photoContainer#{$i}:hover .photoText {
+      opacity: 1;
+    }
+  }
 }
 
 @mixin photo($count: 13) {
-    @for $i from 1 to $count {
-        .photo#{$i}{
-            background-image: url("../images/team/Photo#{$i}.jpg");
-            background-size: cover;
-            width:100%;
-            height:100%;
-            min-height: 400px;
-            transition: opacity 0.5s ease-in-out;
-            position: relative;
-            z-index: 1;
-            box-shadow: 0 0 0 5px black;
-            @if $i % 2 == 1 {
-                position: absolute;
-                filter: blur(4px);
-                top:0;
-                z-index: 0;
-            }
-        }
-        .photo#{$i}:hover{
-            @if $i % 2 == 0 {
-                opacity: 0;
-            }
-        }
+  @for $i from 1 to $count {
+    .photo#{$i} {
+      background-image: url("../images/team/Photo#{$i}.jpg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 100%;
+      height: 100%;
+      min-height: 400px;
+      transition: opacity 0.5s ease-in-out;
+      position: relative;
+      z-index: 1;
+      box-shadow: 0 0 0 5px black;
+      @if $i % 2 == 1 {
+        position: absolute;
+        filter: blur(4px);
+        top: 0;
+        z-index: 0;
+      }
     }
+    .photo#{$i}:hover {
+      @if $i % 2 == 0 {
+        opacity: 0;
+      }
+    }
+  }
 }
 
 @include photo();

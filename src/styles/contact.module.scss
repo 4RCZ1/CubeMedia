@@ -3,7 +3,7 @@ $height: 1.5em;
 $width: $height;
 .contacts{
     text-align: center;
-    font: normal normal normal 30px/40px Segoe UI;
+    font: normal normal normal 2rem Segoe UI;
     letter-spacing: 0.15px;
     color: #000000;
     opacity: 1;
@@ -15,7 +15,6 @@ $width: $height;
     padding-top:2em;
     padding-bottom:2em;
     row-gap:1em;
-    font-size: 36px;
 }
 
 .textContainer {
@@ -35,7 +34,7 @@ $width: $height;
 
 .textContainer a{
     display: flex;
-    height: $height;  
+    height: $height;
     text-decoration: none;
     color: #000000;
 }
@@ -44,4 +43,11 @@ $width: $height;
     vertical-align: middle;
     line-height: $height;
     margin-left: 1em;
+    @media (max-width: 768px) {
+        margin-left: 10px;
+    }
+    @media (max-width: 480px) {
+        margin-left: 5px;
+        font-size: 1.7rem;
+    }
 }

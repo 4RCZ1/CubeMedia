@@ -26,12 +26,12 @@ const Offer = () => {
         </p>
       </div>
       <div className={css.imagesContainer}>
-        <div className={css.imageWrapper1}><a href="#offerContent" onClick={() => SetProject(0)}>
+        <div className={css.imageWrapper}><a href="#offerContent" onClick={() => SetProject(0)}>
           <img className={css.photo1} src={Video}/>
           <p className={css.imageText}>VIDEO</p>
         </a>
         </div>
-        <div className={css.imageWrapper2}><a href="#offerContent" onClick={() => SetProject(1)}>
+        <div className={css.imageWrapper}><a href="#offerContent" onClick={() => SetProject(1)}>
           <img className={css.photo2} src={Foto}/>
           <p className={css.imageText}>FOTO</p>
         </a>

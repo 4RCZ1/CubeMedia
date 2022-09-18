@@ -1,24 +1,24 @@
 
 $titlePadding: 5%;
 .mainText{
-    font: normal normal normal 40px Segoe UI;
+    font: normal normal normal 2rem Segoe UI;
     letter-spacing: 0.2px;
     color: #000000;
     text-align: left;
-    line-height:  40px;
+    //line-height: 3.2rem;
     padding: 5%;
 }
 
 .smallText{
-    font: normal normal normal 20px Segoe UI;
+    font: normal normal normal 1rem Segoe UI;
     letter-spacing: 0.1px;
     color: #000000;
 }
 
 .title{
-    height: 2em;
+    min-height: 1.5em;
     width: calc(100% - $titlePadding);
-    font: normal normal normal 84px Segoe UI;
+    font: normal normal normal 5rem Segoe UI;
     letter-spacing: 0px;
     color: #000000;
     box-shadow: 0 20px 12px -2px grey;

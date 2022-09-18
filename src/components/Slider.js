@@ -1,4 +1,4 @@
-import css from '../styles/slider.module.css';
+import css from '../styles/slider.module.scss';
 import FASHNACTV from "./SliderItems/FASHNACTV";
 import MERCEDESEQB2022 from "./SliderItems/MERCEDESEQB2022";
 import CARSANDCOFFEE2022 from "./SliderItems/CARSANDCOFFEE2022";
@@ -37,13 +37,15 @@ const Slider = () => {
 
   const goToNext = () => {
     const slider = document.getElementsByClassName(css.slider)[0];
+    console.log("1thing:",slider.scrollLeft + slider.parentElement.scrollWidth)
+    console.log("2thing:",slider.scrollWidth)
     if (slider.scrollLeft + slider.parentElement.scrollWidth < slider.scrollWidth) {
       slider.scrollBy({
         top: 0,
         left: scrollOffset,
         behavior: 'smooth'
       })
-    } else if (slider.scrollLeft + slider.parentElement.scrollWidth === slider.scrollWidth) {
+    } else if (slider.scrollLeft + slider.parentElement.scrollWidth >= slider.scrollWidth) {
       slider.scrollTo({
         top: 0,
         left: 0,

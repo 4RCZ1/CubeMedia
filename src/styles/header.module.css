@@ -4,7 +4,7 @@
   justify-content: space-around;
   align-items: center;
   width:100%;
-  height:10vh;
+  min-height:10vh;
   position: fixed;
   top: 0;
   left: 0;
@@ -16,6 +16,19 @@
   font-size: 1.5rem;
   text-decoration: none;
   color: #000;
+}
+
+.sideWrapper{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+  flex-wrap: wrap;
+}
+
+.sideWrapper a{
+  margin: 0.5rem;
 }
 
 .logo{

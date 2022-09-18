@@ -1,5 +1,8 @@
 import css from "../../styles/foto.module.scss"
-import foto from "../../images/offer/FotoContent1.jpg";
+import foto1 from "../../images/offer/FotoContent1.jpg";
+import foto2 from "../../images/offer/FotoContent2.png";
+import foto3 from "../../images/offer/FotoContent3.png";
+
 const FOTO = () => {
     return (
       <div>
@@ -10,7 +13,7 @@ const FOTO = () => {
       </div>
       <div className={css.content}>
           <div className={css.fotoWrapper}>
-            <img src={foto} className={css.foto}/>
+            <img src={foto1} className={css.foto}/>
             <div className={css.description}> 
               <p className={css.descriptionHeader}>Sesje motoryzacyjne od 250zł</p>
               <p>kompleksowa sesja obejmująca:</p>
@@ -21,7 +24,7 @@ const FOTO = () => {
             </div>
           </div>
           <div className={css.fotoWrapper}>
-            <img src={foto} className={css.foto}/>
+            <img src={foto2} className={css.foto}/>
             <div className={css.description}> 
               <p className={css.descriptionHeader}>Realizacje eventowe od 500zł </p>
               <p>kompleksowa realizacja zawierająca:</p>
@@ -31,7 +34,7 @@ const FOTO = () => {
             </div>
           </div>
           <div className={css.fotoWrapper}>
-            <img src={foto} className={css.foto}/>
+            <img src={foto3} className={css.foto}/>
             <div className={css.description}> 
               <p className={css.descriptionHeader}>Sesje produktowe studyjny/plenerowe od 100zł/produkt</p>
               <p>oferujemy:</p>
