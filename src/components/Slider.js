@@ -21,17 +21,22 @@ const Slider = () => {
   const Component = project === null ? () => null : components[project];
   const images = [Fashnactv, Mercedeseqb2022, CandC, Juwenalia];
 
-  useEffect(() => {
+  const recalculateScrollOffset = () => {
     setScrollOffset(document.getElementsByClassName(css.slider)[0].scrollWidth / components.length);
-    console.log(scrollOffset);
+    console.log(document.getElementsByClassName(css.slider)[0].scrollWidth / components.length);
+  }
+
+  useEffect(() => {
+    recalculateScrollOffset()
+    let timer;
+    window.addEventListener('resize', () => {
+      clearTimeout(timer);
+      timer = setTimeout(recalculateScrollOffset, 100);
+    });
   }, [components.length, scrollOffset]);
 
   const goToNext = () => {
     const slider = document.getElementsByClassName(css.slider)[0];
-    console.log(slider.scrollLeft);
-    console.log(slider.scrollWidth);
-    console.log(scrollOffset);
-    console.log('parent:', slider.parentElement.scrollWidth)
     if (slider.scrollLeft + slider.parentElement.scrollWidth < slider.scrollWidth) {
       slider.scrollBy({
         top: 0,
@@ -80,7 +85,7 @@ const Slider = () => {
   return (
     <Fragment>
       <div className={css.sliderContainer}>
-        <div className={css.leftBorder} onClick={goToPrevious}>
+        <div className={`${css.leftBorder} ${css.sideBorder}`} onClick={goToPrevious}>
           <div className={"arrow-left icon " + css.icon}></div>
         </div>
         <div className={css.slider}>
@@ -92,7 +97,7 @@ const Slider = () => {
             )
           })}
         </div>
-        <div className={css.rightBorder} onClick={goToNext}>
+        <div className={`${css.rightBorder} ${css.sideBorder}`} onClick={goToNext}>
           <div className={"arrow-right icon " + css.icon}></div>
         </div>
       </div>
